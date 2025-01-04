@@ -15,7 +15,7 @@ const PlayVideo = () => {
       <h3>Best Youtube Channel To learn Web Development</h3>
       <div className="play-video-info">
         <p>1525 views &bull; 2 days ago</p>
-        <div>
+        <div className="comment-action">
           <span>
             <img src={like} alt="" />
             125
@@ -28,7 +28,6 @@ const PlayVideo = () => {
             </span>
             <span>
               <img src={save} alt="" />
-              125
             </span>
             save
           </span>
@@ -55,7 +54,7 @@ const PlayVideo = () => {
               Jack nicholson <span>2 days ago</span>
             </h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            <div>
+            <div className="comment-action">
               <img src={like} alt="" />
               <span>244</span>
               <img src={dislike} alt="" />
@@ -64,10 +63,6 @@ const PlayVideo = () => {
         </div>
       </div>
       <div className="vid-description">
-        <p>channel that makes learning easy</p>
-        <p>Subscribe GreateStack to watch more videos</p>
-        <hr />
-        <h4>120 comments</h4>
         <div className="comment">
           <img src={user_profile} alt="" />
           <div>
@@ -75,7 +70,7 @@ const PlayVideo = () => {
               Jack nicholson <span>2 days ago</span>
             </h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            <div>
+            <div className="comment-action">
               <img src={like} alt="" />
               <span>244</span>
               <img src={dislike} alt="" />
@@ -84,10 +79,6 @@ const PlayVideo = () => {
         </div>
       </div>
       <div className="vid-description">
-        <p>channel that makes learning easy</p>
-        <p>Subscribe GreateStack to watch more videos</p>
-        <hr />
-        <h4>120 comments</h4>
         <div className="comment">
           <img src={user_profile} alt="" />
           <div>
@@ -95,7 +86,7 @@ const PlayVideo = () => {
               Jack nicholson <span>2 days ago</span>
             </h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            <div>
+            <div className="comment-action">
               <img src={like} alt="" />
               <span>244</span>
               <img src={dislike} alt="" />
@@ -104,10 +95,6 @@ const PlayVideo = () => {
         </div>
       </div>
       <div className="vid-description">
-        <p>channel that makes learning easy</p>
-        <p>Subscribe GreateStack to watch more videos</p>
-        <hr />
-        <h4>120 comments</h4>
         <div className="comment">
           <img src={user_profile} alt="" />
           <div>
@@ -115,7 +102,7 @@ const PlayVideo = () => {
               Jack nicholson <span>2 days ago</span>
             </h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            <div>
+            <div className='comment-action'>
               <img src={like} alt="" />
               <span>244</span>
               <img src={dislike} alt="" />
