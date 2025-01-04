@@ -2,6 +2,7 @@
 import './Home.css'
 import Sidebar from '../../components/Sidebar/Sidebar'
 import Feed from '../../components/Feed/Feed'
+// import propTypes from "prop-types";
 // import './Feed.css'
 
 
@@ -16,4 +17,5 @@ const Home = ({sidebar}) => {
   )
 }
 
-export default Home;
+export default Home
+
