@@ -3,6 +3,8 @@ import "./Feed.css";
 import { Link } from "react-router-dom";
 import { API_KEY } from "../../data";
 import {value_converter} from '../../data'
+import moment from "moment";
+
 
 
 const Feed = ({ category }) => {
@@ -27,8 +29,8 @@ const Feed = ({ category }) => {
   return (
     <div className="feed">
       {data.map((item) => {
-        const { id, snippet, statistics } = item;
-        const { title, channelTitle, thumbnails, publishedAt } = snippet;
+        const { id, snippet,  } = item;
+        const { title, channelTitle, publishedAt } = snippet;
 
         // Format views and date (optional)
         // const views = statistics?.viewCount || "N/A";
@@ -49,8 +51,8 @@ const Feed = ({ category }) => {
               <h2 className="video-title">{item.snippet.title}</h2>
               <h3 className="channel-name">{channelTitle}</h3>
               <p className="video-stats">
-                {value_converter(item.statistics.viewCount)} views &bull;{" "}
-                {moment(item.snippet.publishedAt).fromNow()}
+                {value_converter(item.statistics.viewCount)} views &bull; {' '}
+                {moment(publishedAt).fromNow()}
               </p>
             </div>
           </Link>
