@@ -8,8 +8,23 @@ import thumbnail5 from "../../assets/thumbnail5.png";
 import thumbnail6 from "../../assets/thumbnail6.png";
 import thumbnail7 from "../../assets/thumbnail7.png";
 import thumbnail8 from "../../assets/thumbnail8.png";
+import { useEffect, useState } from 'react';
+import { API_KEY} from "../../data";
 
-const Recommended = () => {
+
+const Recommended = ({categoryId}) => {
+
+  const [apiData, setApiData] = useState([0]);
+  const fetchData = async () =>{
+    const relatedVideo_url = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=US&videoCategoryId=${categoryId}&key=${API_KEY}`;
+    await fetch(relatedVideo_url).then(res=>res.json()).then(data => setApiData(data.item));
+  }
+
+useEffect(()=>{
+fetchData();
+}, [apiData])
+
+
   return (
     <div className="recommended">
       <div className="side-video-list">
